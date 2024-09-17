@@ -1,0 +1,416 @@
+/* Universal Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    background-image: url('SalarJung Museum Hyderabad India.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Arial', sans-serif;
+    height: 100vh;
+    color: #333;
+    overflow-x: hidden;
+}
+
+/* Heading Styling */
+.heading {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #333;
+    text-align: center;
+    margin-top: 40px;
+    letter-spacing: 1.5px;
+    text-transform: capitalize;
+}
+
+.heading:hover {
+    color: #555;
+    transition: color 0.3s ease;
+}
+
+/* Container for Information Section */
+.div-container1 {
+    width: 70%;
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: justify;
+    font-size: 1rem;
+    line-height: 1.6;
+    animation: fadeInContainer 1s ease-in-out;
+}
+
+@keyframes fadeInContainer {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Button Styling */
+.button {
+    display: inline-block;
+    padding: 12px 24px;
+    margin: 15px 5px;
+    font-size: 16px;
+    color: white;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #45a049;
+}
+
+.directions-button {
+    background-color: #007BFF;
+}
+
+.directions-button:hover {
+    background-color: #0056b3;
+}
+
+/* Museum Section Styling */
+.div-container {
+    width: 70%;
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.div-container h1 {
+    font-size: 2.2rem;
+    font-weight: bold;
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Paragraph and Image Layout (Side-by-side) */
+.div-container p {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 30px;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.div-container img {
+    width: 40%;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.div-container img:hover {
+    transform: scale(1.05);
+}
+
+.div-container p:last-child img {
+    margin-right: 0; /* Ensure last image has no right margin */
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .div-container1, .div-container {
+        width: 90%;
+    }
+    
+    .div-container p {
+        flex-direction: column;
+    }
+
+    .div-container img {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 600px) {
+    .button {
+        width: 100%;
+        text-align: center;
+    }
+}
+/* Footer Styling */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 0;
+    font-size: 0.9rem;
+}
+
+.footer-container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.footer h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #fff;
+    font-weight: 700;
+}
+
+.footer p {
+    line-height: 1.6;
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+/* Footer Links */
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+    color: #ddd;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+    color: #fff;
+}
+
+/* Social Media Icons */
+.social-icons {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons li {
+    display: inline-block;
+}
+
+.social-icons li a {
+    display: block;
+    width: 32px;
+    height: 32px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons li a:hover {
+    transform: scale(1.1);
+}
+
+.social-icons img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Footer Bottom Section */
+.footer-bottom {
+    background-color: #222;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 30px;
+    font-size: 0.8rem;
+    color: #bbb;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+/* Responsive Footer */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-about, .footer-links, .footer-social {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #333;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo a {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #f0a500;
+}
+
+/* Testimonials */
+.testimonials {
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.testimonial-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.testimonial {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 45%;
+}
+
+.testimonial p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.testimonial span {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #555;
+}
+
+/* News and Updates */
+.news-updates {
+    background-color: #fff;
+    padding: 40px 20px;
+}
+
+.news-updates .news-item {
+    margin-bottom: 30px;
+}
+
+.news-updates h3 {
+    font-size: 1.3rem;
+    color: #333;
+}
+
+.news-updates p {
+    line-height: 1.6;
+}
+
+/* FAQ Section */
+.faq {
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+}
+
+.faq h3 {
+    font-size: 1.3rem;
+    color: #333;
+}
+
+.faq p {
+    line-height: 1.6;
+    margin-left: 20px;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 0;
+}
+
+.footer-container {
+    width: 100%; /* Make the footer span the entire width of the page */
+    max-width: 1200px; /* Set a maximum width to keep the content centered and readable */
+    margin: 0 auto; /* Center the footer container */
+    display: flex; /* Use flexbox to align the footer sections */
+    justify-content: space-between; /* Space the footer columns evenly */
+    padding: 40px 20px; /* Add padding for spacing inside the footer */
+    background-color: #333; /* Set a background color for the footer */
+    color: white; /* Set the text color to white */
+}
+
+.footer-container div {
+    flex: 1; /* Make each footer column equal in width */
+    padding: 0 20px; /* Add padding between columns */
+}
+
+.footer-bottom {
+    text-align: center; /* Center the copyright text */
+    padding: 20px 0; /* Add vertical padding */
+    background-color: #222; /* Darker background for the footer bottom */
+    color: #ccc; /* Light gray text color */
+}
+
+    .social-icons {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+        padding: 0;
+    }
+    
+    .social-icons li a {
+        font-size: 2rem;
+        color: #fff;
+        transition: color 0.3s ease;
+    }
+    
+    .social-icons li a:hover {
+        color: #f0a500;
+    }
+    
